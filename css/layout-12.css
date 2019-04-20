@@ -1,0 +1,52 @@
+#container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+/*    grid-template-rows: repeat(3, max-content);*/
+    grid-gap: 1em;
+    
+    grid-template-areas:
+        "menu menu menu"
+        "header header header"
+        "main main main"
+        "sign-up login login";
+}
+
+#title {
+    grid-area: header;
+    text-align: center;
+}
+
+#menu {
+    grid-area: menu;
+}
+
+#main {
+    grid-area: main;
+    text-align: center;
+}
+
+#posts {
+/*    grid-area: main;*/
+}
+
+#post {
+/*    grid-area: post;*/
+}
+
+#login {
+    grid-area: login;
+    
+}
+
+#sign-up {
+    grid-area: sign-up;
+}
+
+#logout {
+    grid-area: logout;
+}
+

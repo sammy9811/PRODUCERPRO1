@@ -1,0 +1,69 @@
+/* color scheme
+    Triad
+*/
+
+:root {
+	--main-color: #FAF2AE; 
+	--accent-color: #6DA3C7; 
+	--text-color:#D6DEF5;
+	--accent-two: #FAF2AE;
+    --extra:#000000;
+}
+
+#title {
+	color: var(--accent-color);
+	text-shadow: 2px 2px 0 var(--accent-two);
+}
+
+#login input, #sign-up input {
+	background: var(--accent-color);
+	border: none;
+	padding: 0.25em;
+}
+
+input::placeholder {
+	color: var(--text-color);
+}
+	
+#login button, #sign-up button, #logout {
+	background: var(--extra);
+	color: var(--text-color);
+	padding: 0.25em;
+}
+	
+#menu a {
+	color: var(--main-color);
+	transition: color 300ms ease-in;
+}
+	
+#menu a:hover {
+	color: var(--accent-color);
+}
+	
+#write-post {
+	border: 1px solid var(--accent-two);
+}
+#write-post::placeholder {
+	color: var(--accent-two);
+}
+
+#submit-post {
+	background: var(--accent-two);
+	color: var(--text-color);
+}
+
+.post-text {
+	border-bottom: 2px solid var(--accent-two);
+}
+	
+.post .author {
+	color: var(--accent-two);
+}
+	
+.post .date {
+	color: var(--accent-two);
+}
+
+#container {
+   color: var(--accent-two) 
+}
