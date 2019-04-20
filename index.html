@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> MUSIC </title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase-database.js"></script>
+   
+   	<script type="text/javascript">
+        // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyALqc_1-bnC00D1Dc3dbLIIlXhu42SjZrQ",
+    authDomain: "producer-e81e6.firebaseapp.com",
+    databaseURL: "https://producer-e81e6.firebaseio.com",
+    projectId: "producer-e81e6",
+    storageBucket: "producer-e81e6.appspot.com",
+    messagingSenderId: "30164224691"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</head>
+
+<body>
+    <div id="container">
+        <!-- title / logo -->
+        <div id="title">
+            <h1>Welcome to ProducerPRO</h1>
+        </div>
+        
+        <!-- user info -->
+		<div id="user-info">
+     <div id="display-name"></div>
+   <button id="logout">Log Out</button>
+        </div>
+
+        <div id="main">
+            <img src="BEATS-512.png">
+        </div>
+		
+
+        <!-- login -->
+		<div id="login">
+			<input type="text" id="login-email" placeholder="Email">
+			<input type="password" id="login-password" placeholder="Password">
+			<button id="submit-login">Login</button>
+		</div>
+        
+        <!-- sign up -->
+		<div id="sign-up">
+			<input type="text" id="sign-up-username" placeholder="Username">
+			<input type="email" id="sign-up-email" placeholder="Email">
+			<input type="password" id="sign-up-password" placeholder="Password">
+			<select id="borough">
+				<option>Bronx</option>
+				<option>Brooklyn</option>
+				<option>Manhattan</option>
+				<option>Queens</option>
+				<option>Staten Island</option>
+			</select>
+			<button id="submit-sign-up">Sign Up</button>
+			<!--<p id="signup-response"></p>-->
+		</div>
+
+       <!-- navigation / menu -->
+		<div id="menu">
+			<ul id="menu-list">
+				<li><a href="">Home</a></li>
+				<li><a id="profile-link" href="">Profile</a></li>
+				<li><a href="">Settings</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Users</a></li>
+			</ul>
+		</div>
+    </div>
+    <script src="js/auth.js"></script>
+	<script src="js/post.js"></script>
+	<script src="js/posts.js"></script>
+</body>
+</html>
+
+    
+           

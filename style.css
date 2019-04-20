@@ -1,0 +1,17 @@
+@import 'css/color-11.css';
+@import 'css/main.css';
+@import 'css/layout-12.css';
+@import 'css/typography-13.css';
+@import 'css/menu-15.css';
+@import 'css/responsive-14.css';
+@import 'css/profile.css';
+@import 'css/post.css';
+* { box-sizing: border-box; }
+
+input {
+    display: block;
+}
+body {
+   background-color: #AD605F;
+}
+
